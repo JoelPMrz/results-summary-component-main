@@ -1,0 +1,134 @@
+:root{
+
+    /*Primary */
+    --LigthRed: hsl(0, 100%, 67%);
+    --OrangeYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    --LigthRedBackground: hsl(0, 100%, 67%, 15%);
+    --OrangeYellowBackground: hsl(39, 100%, 56%, 15%);
+    --GreenTealBackground: hsl(166, 100%, 37%, 15%);
+    --CobaltBlueBackground: hsl(234, 85%, 45%, 15%);
+
+    /*Gradients */
+    --LigthSlateBlue: hsl(252, 100%, 67%);
+    --LigthRoyalBlue: hsl(241, 81%, 54%);
+
+    --VioletBlue: hsl(241, 81%, 54%);
+    --Persionbluer: hsla(241, 72%, 46%, 0);
+
+    /*Neutral */
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+}
+
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+}
+.results{
+    background: linear-gradient(var(--LigthSlateBlue), var(--LigthRoyalBlue));
+    border-radius: 0 0 45px 45px;
+    color: var(--PaleBlue);
+}
+.results h1, .number76{
+    color: var(--White);
+}
+
+.circle{
+    background: linear-gradient(var(--VioletBlue), var(--Persionbluer));
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number76{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.summary h2{
+    text-align: left;
+}
+
+.feature{
+    display: flex;
+    border-radius: 7px;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.category{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.feature p{
+    color: grey;
+    font-weight: 700;
+}
+
+span{
+    color: var(--DarkGrayBlue);
+}
+
+.reaction{
+    background-color: var(--LigthRedBackground);
+    color: var(--LigthRed);
+}
+
+.memory{
+    background-color: var(--OrangeYellowBackground);
+    color: var(--OrangeYellow);
+}
+
+.verbal{
+    background-color: var(--GreenTealBackground);
+    color: var(--GreenTeal);
+}
+
+.visual{
+    background-color: var(--CobaltBlueBackground);
+    color: var(--CobaltBlue);
+}
+
+a{
+    background-color: var(--DarkGrayBlue);
+    border-radius: 25px;
+    padding: 1rem;
+    color: var(--White);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media(min-width: 500px){
+
+    main{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+
+}
+
